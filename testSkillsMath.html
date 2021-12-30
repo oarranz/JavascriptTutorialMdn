@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Skills Math</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <section id='math1'></section>
+    <section id='math2'></section>
+    <section id='math3'></section>
+  </body>
+  <script>
+
+  //Math1
+    let finalResult;
+    let evenOddResult;
+
+    let var1, var2, var3, var4;
+    var1 = 50;
+    var2 = 40;
+    var3 = 35;
+    var4 = 76;
+
+    let sumVar= var1 + var2;
+    let subVar = var4 - var3;
+
+    finalResult = sumVar * subVar;
+    evenOddResult = finalResult % 2;
+
+    const math1 = document.querySelector('#math1');
+    let para1Math1 = document.createElement('p');
+    let finalCheckResultCheck = finalResult === 48 ? 'Yes, well done' : `No, it is ${finalResult}`;
+    para1Math1.textContent = `Is the final result 48? ${finalCheckResultCheck}`;
+    let para2Math1 = document.createElement('p');
+    let evenOddResultCheck = evenOddResult === 0 ? 'The final result is even' : 'The final result is odd. Hmr.';
+    para2Math1.textContent = evenOddResultCheck;
+
+    math1.appendChild(para1Math1);
+    math1.appendChild(para2Math1);
+
+    //Math2
+    let result = (7 + 13) / (9 + 7);
+    let result2 = 100 / (2 * 6);
+
+    result *= result2;
+    let finalResultMath2 = result.toFixed(2);
+    let finalNumberMath2 = Number(finalResultMath2);
+
+    const math2 = document.querySelector('#math2');
+
+    let para1Math2 = document.createElement('p');
+    para1Math2.textContent = `Your finalResultMath2 is ${finalResultMath2}`;
+    let para2Math2 = document.createElement('p');
+    let finalNumberCheck = isNaN(finalNumberMath2) === false ? 'finalNumber is a number type. Well done!':`Ooops! finalNumber is not a number.`;
+    para2Math2.textContent = finalNumberCheck;
+
+    math2.appendChild(para1Math2);
+    math2.appendChild(para2Math2);
+
+    //math3
+    const math3 = document.querySelector('#math3');
+
+    // Statement 1: The elephant weights less than the mouse
+    let eleWeight = 1000;
+    let mouseWeight = 2;
+
+    // Statement 2: The Ostrich is taller than the duck
+    let ostrichHeight = 2;
+    let duckHeight = 0.3;
+
+    // Statement 3: The two passwords match
+    let pwd1 = 'stromboli';
+    let pwd2 = 'stROmBoLi';
+
+    let weightComparision = eleWeight < mouseWeight;
+    let heightComparasion = ostrichHeight > duckHeight;
+    let pwdMatch = pwd1 === pwd2;
+
+    let para1Math3 = document.createElement('p');
+    let para2Math3 = document.createElement('p');
+    let para3Math3 = document.createElement('p');
+
+    let weightTest = weightComparision ? 'True — elephants weight less than mice!?':'False — of course an elephant is heavier than a mouse!';
+    let heightTest = heightComparasion ? 'True — an ostrich is indeed taller than a duck!':'False — apparently a duck is taller than an ostrich!?';
+    let pwdTest = pwdMatch ? 'True — the passwords match.':'False — the passwords do not match; please check them';
+
+    para1Math3.textContent = weightTest;
+    para2Math3.textContent = heightTest;
+    para3Math3.textContent = pwdTest;
+
+    math3.appendChild(para1Math3);
+    math3.appendChild(para2Math3);
+    math3.appendChild(para3Math3);
+  </script>
+</html>

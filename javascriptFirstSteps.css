@@ -1,0 +1,55 @@
+/* Changing paragraph content */
+
+#changingParagraph p {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(0,0,200,0.6);
+  background: rgba(0,0,200,0.3);
+  color: rgba(0,0,200,0.6);
+  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Number Guessing game*/
+
+#numberGuessing .lastResult {
+  color: white;
+  padding: 3px;
+}
+
+#variables p{
+  color: purple;
+  margin: 0.5em 0;
+}
+
+#increments div {
+  width: 50%;
+  float: left;
+}
+
+/* Silly story generator*/
+
+#sillyStory label {
+  font-weight: bold;
+}
+
+#sillyStory div{
+  padding-bottom: 20px;
+}
+
+#sillyStory input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+#sillyStory p {
+  background: #FFC125;
+  color: #5E2612;
+  padding: 10px;
+  visibility: hidden;
+}

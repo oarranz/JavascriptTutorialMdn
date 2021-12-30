@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS first steps</title>
+    <link rel="stylesheet" href="javascriptFirstSteps.css">
+    <script src="javascriptFirstSteps.js" defer></script>
+  </head>
+  <body>
+
+    <h1>JavaScript First Steps</h1>
+
+    <section id="changingParagraph">
+      <h2>Changing paragraph content</h2>
+      <p>Player 1: Chris</p>
+    </section>
+
+    <section id='createParagraph'>
+      <h2>Creating paragrphs with a button</h2>
+      <button>click me</button>
+    </section>
+
+    <section id="numberGuessing">
+      <h2>Number guessing game</h2>
+      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+      <div class="form">
+       <label for="guessField">Enter a guess: </label>
+       <input type="text" id="guessField" class="guessField">
+       <input type="submit" value="Submit guess" class="guessSubmit">
+      </div>
+
+      <div class="resultParas">
+       <p class="guesses"></p>
+       <p class="lastResult"></p>
+       <p class="lowOrHi"></p>
+      </div>
+    </section>
+
+    <section id="variables">
+      <h2>Variables</h2>
+    </section>
+
+    <section id="increments">
+      <h2>Increment operator in loops</h2>
+      <div>
+        <p>Invoice totals before sales tax ($):</p>
+
+        <ul class="before">
+
+        </ul>
+
+      </div>
+
+      <div>
+        <p>Invoice totals with 6% sales tax added ($):</p>
+
+        <ul class="after">
+
+        </ul>
+
+      </div>
+    </section>
+
+    <section id='startMachine'>
+      <h2>Start Machine</h2>
+
+      <button>Start Machine</button>
+      <p>The machine is stopped</p>
+    </section>    
+
+    <section id="christmasMessages">
+      <h2>Christmas' messages</h2>
+      <ul>
+      </ul>
+    </section>
+
+    <section id="capitalLetterCity">
+      <h2>UK cities</h2>
+      <ul>
+      </ul>
+    </section>
+  </body>
+
+  <section id="trains">
+    <h2>Trains</h2>
+    <ul></ul>
+  </section>
+
+  <section id="searches">
+    <h2>Top 5 searches</h2>
+    <h3>Live output</h3>
+    <input type="text" name="" value="">
+    <button type="button">Search</button>
+    <ul>
+    </ul>
+  </section>
+
+  <section id="sillyStory">
+    <h2>Silly story generator</h2>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" name="" placeholder="">
+    </div>
+    <div>
+      <label for="us">US</label>
+      <input id="us" type="radio" name="ukus" value="us" checked>
+      <label for="uk">UK</label>
+      <input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <button class="randomize">Generate a random story</button>
+    </div>
+    <p class="story"></p>
+  </section>
+</html>
